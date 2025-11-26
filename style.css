@@ -5,10 +5,27 @@ body {
 }
 
 header, footer {
-    padding: 50px;
+    padding: 20px;
     text-align: center;
     background-color: #333;
     color: white;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    animation: fade-out linear;
+    animation-timeline: scroll();
+    animation-range: 0px 200px;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade-out {
+    to {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
 }
 
 .fixed-bg {
@@ -43,3 +60,30 @@ header, footer {
 .bg-8 { background-image: url('https://picsum.photos/id/17/1920/1080'); }
 .bg-9 { background-image: url('https://picsum.photos/id/18/1920/1080'); }
 .bg-10 { background-image: url('https://picsum.photos/id/19/1920/1080'); }
+
+.controls {
+    margin-top: 10px;
+}
+
+#bg-num-input {
+    padding: 8px;
+    width: 60px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-bg-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+#add-bg-btn:hover {
+    background-color: #45a049;
+}
