@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    line-height: 1.6;
+}
+
+header, footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+}
+
+.fixed-bg {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.content {
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    text-align: center;
+    color: white;
+}
+
+
+/* Different images for each section */
+.bg-1 { background-image: url('https://picsum.photos/id/10/1920/1080'); }
+.bg-2 { background-image: url('https://picsum.photos/id/11/1920/1080'); }
+.bg-3 { background-image: url('https://picsum.photos/id/12/1920/1080'); }
+.bg-4 { background-image: url('https://picsum.photos/id/13/1920/1080'); }
+.bg-5 { background-image: url('https://picsum.photos/id/14/1920/1080'); }
+.bg-6 { background-image: url('https://picsum.photos/id/15/1920/1080'); }
+.bg-7 { background-image: url('https://picsum.photos/id/16/1920/1080'); }
+.bg-8 { background-image: url('https://picsum.photos/id/17/1920/1080'); }
+.bg-9 { background-image: url('https://picsum.photos/id/18/1920/1080'); }
+.bg-10 { background-image: url('https://picsum.photos/id/19/1920/1080'); }
